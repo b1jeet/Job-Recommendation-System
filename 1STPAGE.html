@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrier Recomendation</title>
+	<link rel="stylesheet" type="text/css" href="firstpage.css">
+</head>
+<body>
+   <div class="details">
+
+   	<form id="frm" action="subjects.php" method="POST">
+   		<label for="os">Operating System</label>
+   		<input type="text" name= "os" placeholder="Operating System">
+   		<label for="dsa">Data Structure</label>
+   		<input type="text" name= "dsa" placeholder="DSA">
+   		<label for="cpp">Basic Programming</label>
+   		<input type="text" name= "cpp" placeholder="OOP">
+   		<label for="se">Software Engineering</label>
+   		<input type="text" name= "se" placeholder="SE">
+   		<label for="cn">Computer Networks</label>
+   		<input type="text" name= "cn" placeholder="Computer Networks">
+   		<label for="ec">Electronics</label>
+   		<input type="text" name= "ec" placeholder="Electronics">
+   		<label for="coa">Computer Architecture</label>
+   		<input type="text" name= "coa" placeholder="Computer Architechture">
+   		<label for="intsub">Interested Subjects</label>
+   		<select id="intsub" name="intsub">
+   			<option value="subject1">Select interested subject 1</option>
+   			<option value="cloud computing">Cloud Computing</option>
+   			<option value="networks">Networks</option>
+   			<option value="hacking">Hacking</option>
+   			<option value="computer Architecture">Computer Architecture</option>
+   			<option value="programming">Programming</option>
+   			<option value="parallel computing">Parallel Computing</option>
+   			<option value="iot">IOT</option>
+   			<option value="data engineering">Data Engineering</option>
+   			<option value="software engineering">Software Engineering</option>
+   			<option value="management">Management</option>
+   			<option value="compute">Compute</option>
+   		</select>
+   		<label for="intcar">Interested Carrier Area</label>
+   		<select id="intcar" name="intcar">
+   			<option value="intcar">Select Ingerested Carrier</option>
+   			<option value="system developer">System Developer</option>
+   			<option value="business">Business Process Analyst</option>
+   			<option value="Developer">Developer</option>
+   			<option value="testing">Testing</option>
+   			<option value="sceurity">Sceurity</option>
+   			<option value="Cloud">Cloud Computing</option>
+   			<option value="0">None</option>
+   		</select>
+   		<label for="com">Type of Company</label>
+   		<select id="com" name="com">
+   			<option value="com">Type of company</option>
+   			<option value="Web Services">Web Services</option>
+   			<option value="saas">SaaS Services</option>
+   			<option value="s&m">Sales&Marketing</option>
+   			<option value="t&m">Testing & Maintainance</option>
+   			<option value="development">Product Development</option>
+   			<option value="bpa">BPA</option>
+   			<option value="service">Service Based</option>
+   			<option value="product">Product Based</option>
+   			<option value="cloud">Cloud Service</option>
+   			<option value="finance">Finance</option>
+   			<option value="0">None</option>
+		</select>
+		<label for="intfid">Interested Field</label>
+		<select id="intfid" name="intfid">
+			<option value="0">Management</option>
+			<option value="1">Technical</option>
+		</select>
+		   <button type="Submit" class="submit-btn">Predict Your Carrier</button>
+
+   	</form>
+   	
+   </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0; 
+	font-family: sans-serif;
+}
+body{
+	background: lightblue;
+}
+.details{
+	max-width: 90%;
+	margin: auto;
+	border-radius: 5px;
+	background:#96bb72;
+    padding:20px;
+}
+.frm{
+	top:100px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+input[type=text],select{
+	width:100%;
+	padding:12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+
+}
+input[type=submit]{
+	width:100%;
+	background-color: purple;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border:none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrier Recomendation</title>
+	<link rel="stylesheet" type="text/css" href="carrier.css">
+</head>
+<body>
+    <div class="hero">
+    	<div class="form-box">
+    		<div class="button-box">
+                <div id="btn"></div>
+    			<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+    			<button type="button" class="toggle-btn"onclick="register()">Register</button>
+    		</div>
+            <form id="login" action="login.php" class="input-group" method="POST">
+                <input type="text" class="input-field" placeholder="User ID" id="user" name="user" required>
+                 <input type="text" class="input-field" placeholder="Password" id="pass" name="pass" required>
+                  <input type="checkbox" class="check-box"><span>Remember Password</span>
+                   <button type="Submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" action="register.php" class="input-group" method="POST">
+                <input type="text" class="input-field" placeholder="User ID" id="user" name="user" required>
+                 <input type="email" class="input-field" placeholder="Email ID" id="email" name="email" required>
+                 <input type="number" class="input-field" placeholder="10 digit phone number" pattern="[0-9] [10]" id="phone" name="phone" required>
+                 <label class="input-field">  <input type="radio" name="gender" value="male"> Male</label>
+                 <label class="input-field">  <input type="radio" name="gender" value="female"> Female</label>
+                 <label class="input-field"> <input type="radio" name="gender" value="others"> Other</label>
+                 <input type="password" class="input-field" placeholder="Password" required>
+                  <input type="password" class="input-field" placeholder="Rewrite Password" id="pass" name="pass" required>
+                   <button type="Submit" class="submit-btn">Sign Up</button>
+            </form>
+    	</div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+         function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+
+        }
+    </script>
+</body>
+</html>
